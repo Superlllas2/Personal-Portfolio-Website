@@ -1,16 +1,11 @@
-/*Import JetBrains Mono font*/
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;600&display=swap');
 
-/*Basic reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-
-/*Set font to JetBrains Mono*/
 body {
     font-family: 'JetBrains Mono', monospace;
     display: flex;
@@ -58,7 +53,7 @@ body {
                 }
 
                 a:hover::before {
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 20px;
                 }
             }
         }
@@ -116,11 +111,7 @@ body {
             }
 
             aside#about-me-aside {
-                margin-right: 1rem;
-            }
-
-            &#projects {
-                justify-content: space-around;
+                margin-right: 3rem;
             }
 
             &#contact {
@@ -128,50 +119,71 @@ body {
                 flex-direction: column;
 
                 form {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-
-                .input-group {
+                    box-shadow: rgba(50, 0, 0, 0.14) 0 10px 36px 0;
+                    padding: 2rem 2rem 0;
+                    border-style: none;
+                    margin-top: 2rem;
                     display: flex;
                     flex-direction: column;
 
                     label {
-                        margin-bottom: 5px;
-                        color: blue;
+                        font-weight: bold;
+                        font-size: 26px;
                     }
 
-                    input[type="text"],
-                    textarea {
-                        padding: 10px;
-                        border: 1px solid #ccc;
-                        border-radius: 4px;
+                    .input-group {
+                        flex: 0 1 50%;
+                        position: relative;
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-direction: column;
 
-                        &:focus {
-                            outline: none;
-                            border-color: blue;
+                        label {
+                            margin-bottom: 5px;
+                        }
+
+                        input[type="text"],
+                        textarea {
+                            width: 50%;
+                            padding: 10px;
+                            border-top-style: none;
+                            border-left-style: none;
+                            border-right-style: none;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        textarea {
+                            width: 100%;
+                            height: 80px;
                         }
                     }
 
-                    textarea {
-                        height: 100px;
-                    resize: vertical;
-                    }
-                }
+                    .bottom_area {
+                        display: flex;
+                        justify-content: right;
+                        margin: 50px 0;
 
-                    .submit-btn {
-                        padding: 10px 20px;
-                        background-color: green;
-                        color: white;
-                        border: none;
-                        border-radius: 4px;
-                        cursor: pointer;
-                        align-self: flex-end;
-                        transform: translateX(0px);
+                        .submit-btn {
+                            align-items: center;
+                            background: #FFFFFF;
+                            border: 0 solid #E2E8F0;
+                            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                            display: inline-flex;
+                            font-size: 1rem;
+                            font-weight: 700;
+                            height: 56px;
+                            padding: 24px;
+                            border-radius: 8px;
+                            cursor: pointer;
+                        }
 
-                    &:hover {
-                        transform: translateX(-100px);
-                    }
+                            &:active {
+                                transform: translateX(-50%)
+                            }
+                        }
                     }
                 }
             }
@@ -208,7 +220,7 @@ body {
                     width: 100%;
                     height: auto;
                     border: 1px solid #e1e1e1;
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
                 }
 
                 figcaption {
@@ -225,7 +237,7 @@ body {
         padding: 1rem;
         border-top: 1px solid #e1e1e1;
     }
-}
+
 
 /*Media queries for responsiveness*/
 @media (max-width: 830px) {
