@@ -114,6 +114,13 @@ body {
                 margin-right: 3rem;
             }
 
+            &#projects {
+
+                article {
+                    width: 100%;
+                }
+            }
+
             &#contact {
                 display: flex;
                 flex-direction: column;
@@ -131,8 +138,13 @@ body {
                         font-size: 26px;
                     }
 
+                    .top_row {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 2rem;
+                    }
+
                     .input-group {
-                        flex: 0 1 50%;
                         position: relative;
                         box-sizing: border-box;
                         display: flex;
@@ -144,8 +156,6 @@ body {
 
                         input[type="text"],
                         textarea {
-                            width: 50%;
-                            padding: 10px;
                             border-top-style: none;
                             border-left-style: none;
                             border-right-style: none;
@@ -219,12 +229,48 @@ body {
                 img {
                     width: 100%;
                     height: auto;
-                    border: 1px solid #e1e1e1;
-                    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+                    /*border: 1px solid #e1e1e1;*/
+                    /*box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;*/
                 }
 
                 figcaption {
                     margin-top: 0.5rem;
+                }
+
+
+            }
+
+            .center-figure {
+                margin: 1rem;
+                text-align: center;
+                text-decoration: none;
+                color: inherit;
+
+                .quicksports {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 0;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition-duration: 0.2s;
+                    }
+
+                    .quicksports_flex {
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                            /*border: 1px solid #e1e1e1;*/
+                            /*box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;*/
+                        }
+                    }
                 }
             }
         }
