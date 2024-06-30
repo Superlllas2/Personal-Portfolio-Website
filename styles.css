@@ -7,28 +7,6 @@
     line-height: 2.2rem;
 }
 
-.submit-btn {
-    align-items: center;
-    background: #FFFFFF;
-    border: 0 solid #E2E8F0;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    display: inline-flex;
-    font-size: 1rem;
-    font-weight: 700;
-    height: 56px;
-    padding: 24px;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-
-
-    &:active {
-        /*transform: translateX(-100%)*/
-        box-shadow: 0 0,5px 2px 1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    }
-}
-
 body {
     font-family: 'JetBrains Mono', monospace;
     display: flex;
@@ -299,6 +277,27 @@ body {
                         justify-content: right;
                         margin: 50px 0;
 
+                        .submit-btn {
+                            align-items: center;
+                            background: #FFFFFF;
+                            border: 0 solid #E2E8F0;
+                            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                            display: inline-flex;
+                            font-size: 1rem;
+                            font-weight: 700;
+                            height: 56px;
+                            padding: 24px;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: black;
+
+
+                            &:active {
+                                /*transform: translateX(-100%)*/
+                                box-shadow: 0 0,5px 2px 1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                            }
+                        }
                     }
                 }
             }
